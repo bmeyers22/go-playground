@@ -37,6 +37,7 @@ build_script:
   - echo "-X github.com/bmeyers22/go-playground/plugin.testVar=%TEST_VAR%" > temp.txt
   - set /p BUILD_LDFLAGS=<temp.txt
   - cat temp.txt
+  - echo "%BUILD_LDFLAGS%"
   - go build -ldflags="%BUILD_LDFLAGS%" -o dist\program.exe .
 artifacts:
   - path: dist\program.exe
