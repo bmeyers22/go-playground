@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="cba75ec7-5bac-490d-946f-c32dac864f33" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/appveyor.yml" afterPath="$PROJECT_DIR$/appveyor.yml" />
-      <change beforePath="$PROJECT_DIR$/plugin/plugin.go" afterPath="$PROJECT_DIR$/plugin/plugin.go" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -36,7 +35,7 @@
         <entry file="file://$PROJECT_DIR$/appveyor.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="540">
-              <caret line="36" column="137" lean-forward="false" selection-start-line="36" selection-start-column="137" selection-end-line="36" selection-end-column="137" />
+              <caret line="36" column="161" lean-forward="false" selection-start-line="36" selection-start-column="161" selection-end-line="36" selection-end-column="161" />
               <folding />
             </state>
           </provider>
@@ -205,7 +204,7 @@
     <entry file="file://$PROJECT_DIR$/appveyor.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
-          <caret line="36" column="137" lean-forward="false" selection-start-line="36" selection-start-column="137" selection-end-line="36" selection-end-column="137" />
+          <caret line="36" column="161" lean-forward="false" selection-start-line="36" selection-start-column="161" selection-end-line="36" selection-end-column="161" />
           <folding />
         </state>
       </provider>
