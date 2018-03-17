@@ -2,7 +2,7 @@ package plugin
 
 import "fmt"
 
-var testVar = "test"
+var testVar string
 
 func PrintTestVar() {
 	fmt.Printf("Test var is: %s\n", testVar)
