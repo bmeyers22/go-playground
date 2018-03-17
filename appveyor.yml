@@ -34,7 +34,7 @@ for:
     TEST_VAR: not-master
 
 build_script:
-  - go build -ldflags="-X github.com/bmeyers22/go-playground/plugin.TestVar=BRIAN -X github.com/bmeyers22/go-playground/plugin.testVar=brian" -o dist\program.exe .
+  - go build -ldflags="-X github.com\bmeyers22\go-playground\plugin.TestVar=BRIAN -X github.com\bmeyers22\go-playground\plugin.testVar=brian" -o dist\program.exe .
 artifacts:
   - path: dist\program.exe
     name: package
