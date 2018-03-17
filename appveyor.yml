@@ -1,0 +1,41 @@
+version: 1.0.{build}
+clone_folder: c:\gopath\src\github.com\bmeyers22\go-playground
+environment:
+  GOPATH: c:\gopath
+  RUNNER_BUCKET: staging-runner-onecloud-io
+  matrix:
+    - GOVERSION: 1.9.1
+cache:
+  - c:\gopath\pkg\dep
+install:
+  - echo %PATH%
+  - echo %GOPATH%
+  - set PATH=%GOPATH%\bin;c:\go\bin;%PATH%
+  - go version
+  - go env
+build_script:
+- cmd: >-
+    go build -ldflags "-X onecloud.io\droplet\monitor\api.runnerBucket=%TEST_VAR%"  -o dist\program.exe -i .
+artifacts:
+  - path: dist\program.exe
+    name: package
+
+# Overriding config based on environment
+for:
+
+# override for production
+-
+  branches:
+    only:
+      - master
+
+  environment:
+    TEST_VAR: master
+# override for staging
+-
+  branches:
+    except:
+      - master
+
+  environment:
+    TEST_VAR: not-master
