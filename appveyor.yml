@@ -34,7 +34,7 @@ for:
     TEST_VAR: not-master
 
 build_script:
-  - echo -s -w -X github.com/bmeyers22/go-playground/plugin.testVar=%TEST_VAR% > temp.txt
+  - echo -s -w -X plugin.testVar=%TEST_VAR% > temp.txt
   - set /p BUILD_LDFLAGS=<temp.txt
   - cat temp.txt
   - echo %BUILD_LDFLAGS%
