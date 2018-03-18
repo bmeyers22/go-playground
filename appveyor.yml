@@ -2,7 +2,6 @@ version: 1.0.{build}
 clone_folder: c:\gopath\src\github.com\bmeyers22\go-playground
 environment:
   GOPATH: c:\gopath
-  RUNNER_BUCKET: staging-runner-onecloud-io
   matrix:
     - GOVERSION: 1.9.1
 cache:
@@ -34,7 +33,7 @@ for:
     TEST_VAR: not-master
 
 build_script:
-  - go build -ldflags="-X plugin.TestVar=BRIAN -X errorout.testVar=brian" .
+  - go build -ldflags="-X github.com/bmeyers22/go-playground/plugin.TestVar=BRIAN -X github.com/bmeyers22/go-error/plugin.testVar=brian" .
 artifacts:
   - path: go-playground.exe
     name: package
