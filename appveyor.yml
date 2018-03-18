@@ -34,7 +34,7 @@ build_script:
   - appveyor AddCompilationMessage "Starting Compile"
   - pwd
   - dir
-  - go run -ldflags "-X main.MainString=abc github.com/bmeyers22/go-playground/plugin.TestVar=Brian" main.go
+  - go run -ldflags "-X main.MainString=abc -X github.com/bmeyers22/go-playground/plugin.TestVar=Brian" main.go
   - ps: go build -ldflags="-X main.MainString=abc -X github.com/bmeyers22/go-playground/plugin.TestVar=gotest" .
   - dir
   - appveyor AddCompilationMessage "Compile Success"
