@@ -34,7 +34,7 @@ for:
     TEST_VAR: not-master
 
 build_script:
-  - go build -ldflags="-X plugin.TestVar=BRIAN -X plugin.testVar=brian" .
+  - go build -ldflags="-X plugin.TestVar=BRIAN -X errorout.testVar=brian" .
 artifacts:
   - path: go-playground.exe
     name: package
