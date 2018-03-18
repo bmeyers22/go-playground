@@ -39,6 +39,6 @@ build_script:
   - dir
   - appveyor AddCompilationMessage "Compile Success"
   - go-playground.exe
-  - plugin.exe
+  - plugin
 
 deploy: off
