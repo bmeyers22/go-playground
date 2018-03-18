@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cba75ec7-5bac-490d-946f-c32dac864f33" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/appveyor.yml" afterPath="$PROJECT_DIR$/appveyor.yml" />
-      <change beforePath="$PROJECT_DIR$/main.go" afterPath="$PROJECT_DIR$/main.go" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -37,7 +35,7 @@
         <entry file="file://$PROJECT_DIR$/appveyor.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="540">
-              <caret line="36" column="50" lean-forward="false" selection-start-line="36" selection-start-column="50" selection-end-line="36" selection-end-column="50" />
+              <caret line="36" column="120" lean-forward="false" selection-start-line="36" selection-start-column="120" selection-end-line="36" selection-end-column="120" />
               <folding />
             </state>
           </provider>
@@ -206,7 +204,7 @@
     <entry file="file://$PROJECT_DIR$/appveyor.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
-          <caret line="36" column="50" lean-forward="false" selection-start-line="36" selection-start-column="50" selection-end-line="36" selection-end-column="50" />
+          <caret line="36" column="120" lean-forward="false" selection-start-line="36" selection-start-column="120" selection-end-line="36" selection-end-column="120" />
           <folding />
         </state>
       </provider>
