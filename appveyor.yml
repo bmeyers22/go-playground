@@ -35,8 +35,11 @@ for:
 build_script:
   - appveyor AddCompilationMessage "Starting Compile"
   - pwd
-  - go build -v -ldflags="-X github.com\bmeyers22\go-playground\plugin.TestVar=BRIAN -X github.com/bmeyers22/go-error/plugin.testVar=brian" .
+  - dir
+  - go build -v -ldflags="-X github.com/bmeyers22/go-playground/plugin.TestVar=BRIAN -X github.com/bmeyers22/go-error/plugin.testVar=brian" .
+  - dir
   - appveyor AddCompilationMessage "Compile Success"
+  - go-playground.exe
 artifacts:
   - path: go-playground.exe
     name: package
