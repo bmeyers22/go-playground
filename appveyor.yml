@@ -33,7 +33,10 @@ for:
     TEST_VAR: not-master
 
 build_script:
-  - go build -ldflags="-X github.com/bmeyers22/go-playground/plugin.TestVar=BRIAN -X github.com/bmeyers22/go-error/plugin.testVar=brian" .
+  - appveyor AddCompilationMessage "Starting Compile"
+  - pwd
+  - go build -v -ldflags="-X github.com\bmeyers22\go-playground\plugin.TestVar=BRIAN -X github.com/bmeyers22/go-error/plugin.testVar=brian" .
+  - appveyor AddCompilationMessage "Compile Success"
 artifacts:
   - path: go-playground.exe
     name: package
