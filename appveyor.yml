@@ -38,6 +38,6 @@ build_script:
   - ps: go build -ldflags="-X main.MainString=abc -X github.com/bmeyers22/go-playground/plugin.TestVar=gotest" ./main.go
   - dir
   - appveyor AddCompilationMessage "Compile Success"
-  - go-playground.exe
+  - main.exe
 
 deploy: off
