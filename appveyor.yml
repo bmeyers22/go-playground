@@ -2,8 +2,7 @@ version: 1.0.{build}
 clone_folder: c:\gopath\src\github.com\bmeyers22\go-playground
 environment:
   GOPATH: c:\gopath
-  matrix:
-    - GOVERSION: 1.9.1
+  GOROOT: c:\go19
 cache:
   - c:\gopath\pkg\dep
 install:
