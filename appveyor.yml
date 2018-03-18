@@ -2,7 +2,6 @@ version: 1.0.{build}
 clone_folder: c:\gopath\src\github.com\bmeyers22\go-playground
 environment:
   GOPATH: c:\gopath
-  GOROOT: c:\go19
 cache:
   - c:\gopath\pkg\dep
 install:
@@ -35,7 +34,7 @@ build_script:
   - appveyor AddCompilationMessage "Starting Compile"
   - pwd
   - dir
-  - go build -ldflags="-X github.com/bmeyers22/go-playground/plugin.TestVar=BRIAN -X github.com/bmeyers22/go-playground/plugin.testVar=brian" .
+  - go build -ldflags="-X github.com/bmeyers22/go-playground/plugin.TestVar=gotest" .
   - dir
   - appveyor AddCompilationMessage "Compile Success"
   - go-playground.exe
